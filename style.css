@@ -1,0 +1,262 @@
+/*Misc. Code*/
+
+body{
+  background-image: url('Images/Website_Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.gfont{
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.gfont2{
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h3{
+  text-decoration: underline;
+  font-size: 20px;
+  color: rgb(135, 206, 250);
+}
+
+h2{
+  font-size: 40px;
+  margin: 15px;
+  color: rgb(135, 206, 250);
+
+}
+
+dt{
+  text-decoration: underline;
+  text-indent: 20px;
+  color: rgb(135, 206, 250);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color .5s ease, color .5s ease, font-size .5s ease;
+}
+
+a:hover{
+  background-color: rgba(13, 0, 130, 0.199);
+  color: white;
+  font-size: 20px;
+  cursor: url("Images/Filament.png"), auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar{
+  display: flex;
+  gap: 20px;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+footer .logo{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/*Mainly Contact Page Code*/
+main{
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.form, .radio, .gfont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.radio label {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+}
+
+.radio textarea {
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  cursor: url("Images/3DPrinting.png"), auto;
+  transition: background-color 0.5s ease;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+
+/*Mainly Products Page Code*/
+.buy{
+  padding: 10px;;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.buy:hover {
+  background-color: rgb(85, 85, 85);
+  cursor: url("Images/3DPrinting.png"), auto;
+}
+
+.table-section img{
+  width: 100px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.table-section img:hover{
+  transform: scale(2);
+}
+
+.table-section caption {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+
+caption,table, th, td {
+  border: 3px solid rgba(54, 54, 97, 0.975);
+  border-collapse: collapse;
+  background-color: rgba(48, 47, 92, 0.192);
+}
+
+.table-section th, 
+.table-section td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;    
+  text-align: left;
+  color: white;
+}
+
+caption{
+  color: rgb(135, 206, 250);
+}
+
+.pop-fil_post {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 15px; 
+}
+
+.pop_sect,
+.fil_sect {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.pop_sect ol,
+.fil_sect ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*Mainly Home Page Code*/
+.list-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.list-image dl {
+  flex: 1;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.home-main {
+  max-width: 800px;
+  padding: 25px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.home-main .gfont p {
+  line-height: 1.5;
+}
+
+.home-main dl {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.home-main dd {
+  margin-left: 25px;
+}
